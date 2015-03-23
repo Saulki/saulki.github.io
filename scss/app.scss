@@ -1,5 +1,12 @@
 body { background-color: purple; }
 
+.featured {
+	background-color: purple;
+	& h1 {
+		color: orange;
+	}
+}
+
 @import "settings";
 @import "foundation";
 
