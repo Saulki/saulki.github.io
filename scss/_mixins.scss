@@ -1,0 +1,26 @@
+// @mixin border($border-side, $border-size:1, $border-color:#ccc) {
+// 	@if ($border-side == top or $border-side == bottom or $border-side == left or $border-side == right) {
+//     	border-#{$border-side}: $border-size solid $border-color;
+//     }
+// }
+
+@mixin border( $coordinates: 0 0 0 0, $colour: #000000, $style: solid ) {
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if not(unitless($top)) {
+    border-top: $top $style $colour;
+  }
+  @if not(unitless($right)) {
+    border-right: $right $style $colour;
+  }
+  @if not(unitless($bottom)) {
+    border-bottom: $bottom $style $colour;
+  }
+  @if not(unitless($left)) {
+    border-left: $left $style $colour;
+  }
+
+}
