@@ -51,6 +51,7 @@ ul.disc, ol {
 				background: url(/images/logo.svg) no-repeat;
 				background-size: 100% 100%;
 				height: 50px;
+				max-width: 20%;
 				@media #{$medium-up} {
 					height: 60px;
 					margin-top: -5px;
