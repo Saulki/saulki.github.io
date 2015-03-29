@@ -10,55 +10,57 @@
   </head>
   <body>
 
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Saulki website</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html">Redesign Goals</a></li>
-          <!-- <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li> -->
+    <div class="contain-to-grid fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a class="logo" href="#">Saulki website</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="index.html">Profile</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="process.html">Process</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right social-links">
+            <li><a class="no-padding" href="twitter" target="_blank"><i class="ic-icon ic-social-twitter"></i></a></li>
+            <li><a class="no-padding" href="dribbble" target="_blank"><i class="ic-icon ic-social-dribbble"></i></a></li>
+            <li><a class="no-padding" href="linkedin" target="_blank"><i class="ic-icon ic-social-linkedin"></i></a></li>            
+            <!-- <li class=""><a href="goals.html">Redesign Goals</a></li> -->
+            <!-- <li class="has-dropdown">
+              <a href="#">Right Button Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">First link in dropdown</a></li>
+                <li class="active"><a href="#">Active link in dropdown</a></li>
+              </ul>
+            </li> -->
+          </ul>
 
-    <header class="page-header">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="works.html">Works</a></li>
+            <!-- <li><a href="process.html">Process</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <header class="page-header dark">
       <div class="row">
         <div class="medium-12 columns">
           <h1>My carefully crafted interfaces</h1>
+          <!-- <p class="subline">Because new is always better</p> -->
           <p>Design is not only visual assets, but the process itself. Each project includes a description of how I came to the final solution and pictures, showing my process from early sketches to final visuals.</p>
         </div>
       </div>
     </header>
 
-    <article class="content-section">
+    <article class="content-section project">
       <div class="row">
         <div class="medium-6 columns text-right">
-          <h4 class="">Meteo weather app</h4>
+          <h2 class="">Meteo weather app</h2>
           <ul class="inline-list tags">
             <li>IA</li>
             <li>Sketching</li>
@@ -73,15 +75,16 @@
           </ul>
         </div>
         <div class="medium-6 columns">
-          <p class="panel project-img">Image here</p>
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>
 
-    <article class="content-section">
+    <article class="content-section darker project">
       <div class="row">
         <div class="medium-6 medium-push-6 columns">
-          <h4 class="">Project title</h4>
+          <h2 class="">Project title</h2>
           <ul class="inline-list tags">
             <li>IA</li>
             <li>Sketching</li>
@@ -91,15 +94,16 @@
           <a class="small button" href="#">View work</a>
         </div>
         <div class="medium-6 medium-pull-6 columns">
-          <p class="panel project-img">Image here</p>
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>
 
-    <article class="content-section">
+    <article class="content-section project">
       <div class="row">
         <div class="medium-6 columns">
-          <h4 class="">Project title</h4>
+          <h2 class="">Project title</h2>
           <ul class="inline-list tags">
             <li>IA</li>
             <li>Sketching</li>
@@ -109,15 +113,16 @@
           <a class="small button" href="#">View work</a>
         </div>
         <div class="medium-6 columns">
-          <p class="panel project-img">Image here</p>
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>
 
-    <article class="content-section">
+    <article class="content-section darker project">
       <div class="row">
-        <div class="medium-6 medium-push-6 columns">
-          <h4 class="">Project title</h4>
+        <div class="large-6 large-push-6 columns">
+          <h2 class="">Project title</h2>
           <ul class="inline-list tags">
             <li>IA</li>
             <li>Sketching</li>
@@ -127,7 +132,8 @@
           <a class="small button" href="#">View work</a>
         </div>
         <div class="medium-6 medium-pull-6 columns">
-          <p class="panel project-img">Image here</p>
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>

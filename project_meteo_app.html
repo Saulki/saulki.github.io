@@ -10,111 +10,120 @@
   </head>
   <body>
 
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Saulki website</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html">Redesign Goals</a></li>
-          <!-- <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li> -->
+    <div class="contain-to-grid fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a class="logo" href="#">Saulki website</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="index.html">Profile</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="process.html">Process</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right social-links">
+            <li><a class="no-padding" href="twitter" target="_blank"><i class="ic-icon ic-social-twitter"></i></a></li>
+            <li><a class="no-padding" href="dribbble" target="_blank"><i class="ic-icon ic-social-dribbble"></i></a></li>
+            <li><a class="no-padding" href="linkedin" target="_blank"><i class="ic-icon ic-social-linkedin"></i></a></li>            
+            <li class=""><a href="goals.html">Redesign Goals</a></li>
+            <!-- <li class="has-dropdown">
+              <a href="#">Right Button Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">First link in dropdown</a></li>
+                <li class="active"><a href="#">Active link in dropdown</a></li>
+              </ul>
+            </li> -->
+          </ul>
 
-    <header class="page-header">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <header class="page-header dark">
       <div class="row">
-        <div class="medium-5 columns">
+        <div class="large-5 columns">
           <h1>Project name: Meteo</h1>
+          <p class="subline">Because new is always better</p>
           <p>Description: Accurate numerical weather forecast for Lithuania, right from meteo.lt.
-The detailed weather - temperature, cloud cover, precipitation, wind - the closest 48 hours, every hour. More than 135 local Lithuanian.
-The current forecast for the nearest airport from the automatic measuring station with a 40 minute delay. Lithuania operates across all 18 stations.</p>
+The detailed weather - temperature, cloud cover, precipitation, wind - the closest 48 hours, every hour. More than 135 local Lithuanian.</p>
         </div>
-        <div class="medium-7 columns">
-          <p class="panel project-img">Image here</p>
+        <div class="large-7 columns">
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </header>
 
-    <article class="content-section">
+    <article class="content-section nopad-b">
       <div class="row">
         <div class="medium-6 columns">
-          <h4 class="">Project Mission / Challenge</h4>
+          <h2 class="">Project Mission / Challenge</h2>
           <p>I had a chance to work with fantastic team of developers and create this cool weather forecast mobile application.</p>
         </div>
         <div class="medium-6 columns">
-          <h4 class="">My Role</h4>
+          <h2 class="">My Role</h2>
           <p>I had a chance to work with fantastic team of developers and create this cool weather forecast mobile application.</p>
         </div>
       </div>
       <div class="row">
-        <div class="medium-12">
-          <p class="panel project-img">Image here</p>
+        <div class="medium-12 columns">
+          <img data-interchange="[images/img-large.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
+        </div>
+      </div>
+    </article>
+
+    <article class="content-section darker">
+      <div class="row align-center">
+        <div class="medium-8 columns">
+          <h2 class="">Information architecture</h2>
+          <p>Project description, what it is and the client. Project description, what it is and the client.Project description, what it is and the client.Project description, what it is and the client.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <img data-interchange="[images/half-img-1.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
+        </div>
+        <div class="medium-6 columns">
+          <img data-interchange="[images/half-img-2.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>
 
     <article class="content-section">
-      <div class="row">
-        <div class="medium-8 medium-offset-2 columns">
-          <h4 class="">Information architecture</h4>
-          <p>Project description, what it is and the client. Project description, what it is and the client.Project description, what it is and the client.Project description, what it is and the client.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="medium-6 columns">
-          <p class="panel project-img">Image here</p>
-        </div>
-        <div class="medium-6 columns">
-          <p class="panel project-img">Image here</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="content-section">
-      <div class="row">
-        <div class="medium-8 medium-offset-2 columns">
-          <h4 class="">UI Mockups</h4>
+      <div class="row align-center">
+        <div class="medium-8 columns">
+          <h2 class="">UI Mockups</h2>
           <p>Project description, what it is and the client. Project description, what it is and the client.Project description, what it is and the client.Project description, what it is and the client.</p>
           <p>Project description, what it is and the client. Project description, what it is and the client.Project description, what it is and the client.Project description, what it is and the client.</p>
         </div>
       </div>
       <div class="row">
-        <div class="medium-3 columns">
-          <p class="panel project-img">Image here</p>
+        <div class="small-6 large-3 columns">
+          <img data-interchange="[images/img1.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
-        <div class="medium-3 columns">
-          <p class="panel project-img">Image here</p>
+        <div class="small-6 large-3 columns">
+          <img data-interchange="[images/img2.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
-        <div class="medium-3 columns">
-          <p class="panel project-img">Image here</p>
+        <div class="small-6 large-3 columns">
+          <img data-interchange="[images/img3.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
-        <div class="medium-3 columns">
-          <p class="panel project-img">Image here</p>
+        <div class="small-6 large-3 columns">
+          <img data-interchange="[images/img4.jpg, (default)], [images/Palyginimas-small.png, (small-only)], [images/Palyginimas-retina.png, (retina)]">
+          <noscript><img src="images/Palyginimas.png"></noscript>
         </div>
       </div>
     </article>
