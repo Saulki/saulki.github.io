@@ -30,7 +30,10 @@ ul.disc, ol {
 
 .contain-to-grid {
 	@include border(0 0 1px 0, #eeeeee);
-	padding: $topbar-height/2 0;
+	padding: 10px 0;
+	@media #{$medium-up} {
+		padding: $topbar-height/2 0;
+	}
 	@include transition(padding, 300ms);
 	.top-bar {
 		&.expanded {
