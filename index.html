@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
@@ -10,96 +11,96 @@
   </head>
   <body>
 
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Saulki website</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html"><i class="fi-music size-14"></i></a></li>
-          <li class=""><a href="goals.html">Redesign Goals</a></li>
-          <!-- <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li> -->
+    <div class="contain-to-grid fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a class="logo" href="#">Saulki website</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="index.html">Profile</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="process.html">Process</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right social-links">
+            <li><a class="no-padding" href="https://twitter.com/sauldesign" target="_blank"><i class="ic-icon ic-social-twitter"></i></a></li>
+            <li><a class="no-padding" href="https://dribbble.com/Saulki" target="_blank"><i class="ic-icon ic-social-dribbble"></i></a></li>
+            <li><a class="no-padding" href="linkedin" target="_blank"><i class="ic-icon ic-social-linkedin"></i></a></li>            
+            <!-- <li class=""><a href="goals.html">Redesign Goals</a></li> -->
+            <!-- <li class="has-dropdown">
+              <a href="#">Right Button Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">First link in dropdown</a></li>
+                <li class="active"><a href="#">Active link in dropdown</a></li>
+              </ul>
+            </li> -->
+          </ul>
 
-    <header class="page-header">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="index.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <!-- <li><a href="process.html">Process</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <header class="page-header dark home-intro fixed-bg" data-interchange="[/images/default-background.jpg, (medium)], [default-background@2x.jpg, (retina)]">
       <div class="row">
-        <div class="medium-6 medium-centered columns text-center" style="padding: 100px 0;">
-          <h1>Working as freelance<br />interaction designer</h1>
-          <p>I am UI/UX specialist with a passion for designing clean and functional interfaces. Working from user perspective, I can bring the best user experiences. I design <a href="">Web applications</a>, <a href="">Corporate websites</a> and <a href="">Mobile interfaces</a>.</p>
+        <div class="medium-8 medium-centered columns text-center">
+          <h1><!-- Working as freelance<br /> -->Interaction designer</h1>
+          <p>I am UI/UX specialist with a passion for designing clean and functional interfaces. I bring the best user experience to users.</p>
+          <p><a href="">Web applications</a>, <a href="">Corporate websites</a> and <a href="">Mobile interfaces</a>.</p>
         </div>
       </div>
     </header>
 
-    <div class="content-section process">
+    <div class="content-section text-center process">
       <div class="row">
-        <div class="large-12 columns">
-          <h2 class="text-center">What I can offer: my process</h2>
+        <div class="medium-4 columns">
+          <img data-interchange="[images/picture-sketching.png, (default)], [images/picture-sketching@2x.png, (retina)]">
+          <noscript><img src="images/picture-sketching.png"></noscript>
+          <p><b>Great User Experience</b></p>
+          <p class="desc">This is where all ideas are born. User research, task analysis, user stories and journey maps allows me to focus on user needs. Always test your wireframes before you build a product.</p>
         </div>
-        <div class="large-3 columns panel">
-          <p>1. Define problem and research</p>
+        <div class="medium-4 columns">
+          <img data-interchange="[images/picture-web.png, (default)], [images/picture-web@2x.png, (retina)]">
+          <noscript><img src="images/picture-web.png"></noscript>
+          <p><b>Functional Web Applications</b></p>
+          <p class="desc">Function always comes first, but beautiful interface makes user feel good about it. Great visual presentation improves overall user experience.</p>
         </div>
-        <div class="large-3 columns panel">
-          <p>2. Information architecture</p>
-        </div>
-        <div class="large-3 columns panel">
-          <p>3. Sketching/Wireframing</p>
-        </div>
-        <div class="large-3 columns panel">
-          <p>4. UI Design</p>
+        <div class="medium-4 columns">
+          <img data-interchange="[images/picture-mobile.png, (default)], [images/picture-mobile@2x.png, (retina)]">
+          <noscript><img src="images/picture-mobile.png"></noscript>
+          <p><b>Fast Mobile Experience</b></p>
+          <p class="desc">Mobile applications has to be simple, intuitive and make user's everyday life easier. I believe it can be achieved with minimalistic and clean interface design.</p>
         </div>
       </div>
     </div>
 
-    <div class="content-section about">
+    <div class="content-section about darker text-center">
       <div class="row">
         <div class="large-12 columns">
-          <h2 class="text-center">Read more about me:</h2>
-        </div>
-        <div class="large-6 columns">
-          <p>Information about me, how I work and What I do. Long paragraph.</p>
-        </div>
-        <div class="large-6 columns">
-          <p>Continue the story about me, how I work and What I do.</p>
-        </div>
-        <div class="large-12 columns">
           <ul class="button-group">
-            <li><a href="#" class="button">View my work</a></li>
-            <li><a href="#" class="button">Contact me</a></li>
+            <li><a href="works.html" class="button btn-blue">View my work</a></li>
+            <li><a href="contact.html" class="button">Contact me</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer fixed-bg" data-interchange="[/images/default-background.jpg, (medium)], [default-background@2x.jpg, (retina)]">
       <div class="row">
-        <div class="medium-12 text-center">
-          <p>some text</p>
-          <p>some text</p>
+        <div class="medium-12 text-center columns">
+          <p class="social">Follow me on 
+            <a href="https://twitter.com/sauldesign">Twitter</a>, 
+            <a href="https://dribbble.com/Saulki" target="_blank">Dribbble</a>, 
+            <a href="https://www.behance.net/Saulki" target="_blank">Behance</a> and connect on 
+            <a href="http://lt.linkedin.com/in/sauliuskirklys/en">LinkedIn</a></p>
+          <p class="copyright">Copyright 2015 Saulius Kirklys</p>
         </div>
       </div>
     </footer>
