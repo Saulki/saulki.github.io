@@ -177,14 +177,14 @@ ul.disc, ol {
 		margin-bottom: rem-calc(10);
 	}
 	.subline {
-		color: $text-light;
+		color: $light-purple;
 		font-size: 1.111rem;
 		margin: rem-calc(10) 0 rem-calc(65) 0;
 	}
 	p {
-		color: $text-light;
+		color: $light-purple;
 		margin-bottom: $content-spacing;
-		// max-width: 30rem;
+		max-width: 30rem;
 	}
 	&.dark {
 		background-color: #38163B;
@@ -273,6 +273,10 @@ ul.disc, ol {
 		p {
 			clear: both;
 		}
+		.row {
+			margin-bottom: 0;
+			img { margin-bottom: 1px;}
+		}
 	}
 	&.process {
 		p {
@@ -359,31 +363,87 @@ blockquote {
 	}
 }
 
+label {
+	font-size: 1rem;
+	color: $text-body;
+	small {
+		color: $text-light;
+		font-style: italic;
+		font-family: $font-family-serif;
+		padding-left: .5rem;
+	}
+}
+.error>label>small {
+	color: $text-light;
+	font-style: italic;
+	font-family: $font-family-serif;
+	padding-left: .5rem;
+}
+small.error {
+	font-size: 0.778rem!important;
+}
+
+#ContactForm > div {
+	margin-bottom: 2rem;
+}
+
+
+.btn {
+	background-color: transparent;
+	border: 2px solid $purple;
+	color: $purple;
+	text-transform: uppercase;
+	@include border-radius(26px);
+	font-weight: $font-weight-bold;
+	font-size: 0.778rem;
+	&.btn-blue {
+		border-color: $blue;
+		color: $blue;
+		&:hover {
+			background-color: #D2E1EA;
+		}
+	}
+	&:hover {
+		background-color: #E2DAE3;
+		color: $purple;
+	}
+}
+
 .button-group {
 	& > li {
-		.button {
-			background-color: transparent;
+		.btn {
 			border: 2px solid $purple;
 			color: $purple;
-			text-transform: uppercase;
-			@include border-radius(26px);
-			font-weight: $font-weight-bold;
-			font-size: 0.778rem;
-			&.btn-blue {
-				border-color: $blue;
-				color: $blue;
-			}
 		}
 		&:first-child {
 			margin-right: 1rem;
-			.button {
+			.btn {
 				border-left: 2px solid $purple;
 				&.btn-blue {
 					border-color: $blue;
+					color: $blue;
 				}
 			}
 		}
 	}	
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+input[type="color"], 
+textarea {
+	@include border-radius(3px)
 }
 
 
