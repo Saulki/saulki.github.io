@@ -177,24 +177,33 @@ ul.disc, ol {
 		margin-bottom: rem-calc(10);
 	}
 	.subline {
-		color: $light-purple;
+		color: $text-light;
 		font-size: 1.111rem;
 		margin: rem-calc(10) 0 rem-calc(65) 0;
 	}
 	p {
-		color: $light-purple;
+		color: $text-light;
 		margin-bottom: $content-spacing;
-		max-width: 30rem;
 	}
 	&.dark {
 		background-color: #38163B;
 		color: white;
-		& h1 {
+		h1 {
 			color: white;
+		}
+		.subline, p {
+			color: $light-purple;
 		}
 	}
 	.row.align-center {
 		max-width: $row-center-width;
+	}
+	.max {
+		max-width: 35rem;
+	}
+	img {
+		margin-bottom: 0;
+		margin-top: 2rem;
 	}
 	&.home-intro {
 
@@ -269,14 +278,15 @@ ul.disc, ol {
 			margin-bottom: 0;
 			text-align: center;
 			div:first-child {
-				padding-top: 4rem;
+				padding: 2rem 0;
 			}
 			img { 
 				margin-bottom: 0;
 			}
-			@media #{$medium-only} {
+			@media #{$large-up} {
+				// margin-top: rem-calc(120);
 				div:first-child {
-					padding: 2rem 0;
+					padding: 7rem 0 0;
 				}
 			}
 		}
