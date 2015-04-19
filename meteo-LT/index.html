@@ -1,0 +1,354 @@
+<!DOCTYPE>
+<html lang="en">  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Remove responsive <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Meteo Pradinis</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- Bootstrap -->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+ 
+    <body>
+        <header class="header">
+            <div class="row topbar">
+                <div class="container">
+                    <a href="#" class="pull-left logo"><img src="images/Herbas.png" /></a>
+                    <ul class="nav header-list">
+                        <li><a href="#" class="active">LT</a> <a href="#">EN</a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-wheelchair"></i></a>
+                            <a href="#"><i class="fa fa-sitemap"></i></a>
+                        <li><a href="dashboard.html"><i class="fa fa-user"></i> Prisijungti</a></li>
+                        <li class="search">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <a class="btn" type="button"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row navigation">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kitos prognozės <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Faktinė informacija <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apžvalgos <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Klimatas <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Naudinga <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mokamos paslaugos <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="">
+            <section class="container main-content">
+
+                <div class="row">
+                    <div class="container">
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin-b">
+                    <div class="col-xs-6">
+                        <table class="table weather table-striped" id="weather">
+                            <colgroup>
+                                <col class="col-city"></col>
+                                <col class="col-day1"></col>
+                                <col class="col-day2"></col>
+                                <col class="col-day3"></col>
+                            </colgroup>
+                            <thead>
+                                <tr class="weather-header">
+                                    <th class="search-input"><input type="text" class="form-control" placeholder="Įveskite miestą..."></th>
+                                    <th>Trečiadienis <br />02.25</th>
+                                    <th>Ketvirtadienis <br />02.26</th>
+                                    <th>Penktadienis <br />02.27</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-city"><a href="#">Vilnius</a></td>
+                                    <td class="forecast"><i class="ic ic-debesuota"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-giedra"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-city"><a href="#">Kaunas</a></td>
+                                    <td class="forecast"><i class="ic ic-lietus"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-smarkus-lietus"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-lietus"></i><b>2° - 5°</b>7 m/s PV</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-city"><a href="#">Klaipėda</a></td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-city"><a href="#">Šiauliai</a></td>
+                                    <td class="forecast"><i class="ic ic-lietus"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-city"><a href="#">Panėvėžys</a></td>
+                                    <td class="forecast"><i class="ic ic-giedra"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-giedra"></i><b>2° - 5°</b>7 m/s PV</td>
+                                    <td class="forecast"><i class="ic ic-debesuota-pragiedruliai"></i><b>2° - 5°</b>7 m/s PV</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="button-group">
+                                            <div class="dropdown pull-right">
+                                                <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    Lietuvos miestai <span class="caret"></span>
+                                                </button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                              </ul>
+                                            </div>
+                                            <div class="dropdown pull-right">
+                                                <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    Europos miestai <span class="caret"></span>
+                                                </button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="map-container">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#">Temperatūra</a></li>
+                                <li role="presentation"><a href="#">Krituliai</a></li>
+                                <li role="presentation"><a href="#">Debesuotumas</a></li>
+                                <li role="presentation">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daugiau <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="map-view"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End featured -->
+
+                <div class="comment gray-bg extra-padding"> 
+                    <h2 class="">Sinoptiko komentaras</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="grey">
+                                <img src="images/Video.png" alt="Video" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <h4>2015-02-25</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <section class="container main-content">
+
+            <div class="recommend">  
+                <h2 class="">Rekomenduojame</h2>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6 ">
+                        <div class="block-list">
+                            <span class="title"><i class="fa fa-fire"></i>Miškų gaisringumas</span>
+                            <ul>
+                                <li><a href="#">Korupcijos prevencija</a></li>
+                                <li><a href="#">Radarų informacija</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 ">
+                        <div class="block-list with-image">
+                            <span class="title"><i class="fa fa-puzzle-piece"></i>Įdomu</span>
+                            <img src="images/interesting-img.png" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 ">
+                        <div class="block-list">
+                            <span class="title"><i class="fa fa-leaf"></i>Ūkininkams</span>
+                            <ul>
+                                <li><a href="#">Korupcijos prevencija</a></li>
+                                <li><a href="#">Radarų informacija</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 ">
+                        <div class="block-list">
+                            <span class="title"><i class="fa fa-database"></i>Mokamos paslaugos</span>
+                            <ul>
+                                <li><a href="#">Korupcijos prevencija</a></li>
+                                <li><a href="#">Radarų informacija</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row news">
+                <div class="col-xs-9">
+                    <div class="gray-bg extra-padding">
+                        <h2 class="">Naujienos</h2>
+                        <article class="row">
+                            <div class="col-xs-12 title">
+                                Pirmos naujienos pavadinimas <span>2015-02-25</span>
+                            </div>
+                            <div class="col-xs-6">
+                                <div style="width: 100%; height: 160px; background-color: #6c6c6c"></div>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </article>
+                        <article class="row">
+                            <div class="col-xs-12 title">
+                                Antros naujienos pavadinimas <span>2015-02-25</span>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-xs-3 dark-gray-bg">
+                    <div class="advertisement">
+                        <h3>Reklama</h3>
+                        <a href="#"><img src="images/ad1.png" /></a>
+                        <a href="#"><img src="images/ad2.png" /></a>
+                        <a href="#"><img src="images/ad1.png" /></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul>
+                            <li><a href="#">Struktūra ir kontaktai</a></li>
+                            <li><a href="#">Teisinė informacija</a></li>
+                            <li><a href="#">Veikla</a></li>
+                            <li><a href="#">Nuorodos</a></li>
+                            <li><a href="#">Autorinės teisės</a></li>
+                            <li><a href="#">Naudojimo taisyklės</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-5">
+                        <ul>
+                            <li><b>Kontaktai:</b></li>
+                            <li>
+                                Rudnios g. 6, 09300 Vilnius, Lietuva<br />
+                                Tel.: +370 5 275 1194<br />
+                                Faks." +370 5 272 8874<br />
+                                El. paštas: lhmt@meteo.lt
+                            </li>
+                            <li>
+                                Juridinių asmenų registras<br />
+                                kodas 290743240<br />
+                                PVM mokėtojo kodas LT907432416
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="#"><img class="margin-b" src="images/footer-icon_WMO.png" /></a><br />
+                        <a href="#"><img class="margin-b" src="images/footer-icon_kuriame.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <a href="#"><img class="sign" src="images/counter.png" /></a> 
+                    ©2015 Lietuvos hidrometeorologijos tarnyba prie Aplinkos ministerijos. Visos teisės saugomos.</div>
+            </div>
+        </footer>
+ 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function(){
+                var weatherH = $('#weather').height();
+                $(".map-view").css({ "min-height" : weatherH - 50 });
+            });
+        </script>
+    </body>
+</html>

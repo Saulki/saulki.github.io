@@ -1,0 +1,89 @@
+.logo { 
+	height: 48px; 
+	padding-right: 350px;
+	margin: 24px 20px 24px 0; 
+	background: url(../images/LHMT.png) no-repeat right center;
+} 
+
+.header-list { 
+	list-style: none; 
+	margin: 20px 0; 
+	padding: 0; 
+	float: right; 
+	li {
+		float: left;
+		padding-left: 30px;
+		a { 
+			display: inline-block; 
+			padding: 6px;
+			color: @gray-dark;
+			&:hover {
+				color: @brand-primary; 
+				background-color: transparent;
+			}
+			&.active {
+				font-weight: 600; 
+				color: @brand-primary;
+			}
+		}
+		&.search { 
+			display: inline-block; 
+			position: relative; 
+			clear: both;
+			float: right;
+			margin-top: 10px;
+		}
+	}
+	input { 
+		width: 200px; 
+		background-color: #ffffff;
+		color: #303030;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		font-size: 12px;
+		line-height: 16px;
+		height: 30px;
+		font-weight: 300;
+	}
+	.btn { 
+		position: absolute; 
+		right: 3px; 
+		top: 0; 
+		height: 30px;
+		width: 30px;
+		i { line-height: 16px; color: @brand-primary; }
+	}
+	.company { 
+		display: block; 
+		font-size: 12px; 
+	}
+}
+
+.navigation { 
+	background-color: @gray-light; 
+	.navbar-default {
+		border: 0;
+		.navbar-nav {	
+			.fa { 
+				font-size: 15px;
+    line-height: @line-height-computed;
+			}
+			> .open > a {
+		    	&,
+		    	&:hover,
+		    	&:focus {
+		    		background-color: @navbar-default-link-hover-bg;
+		    		color: @navbar-default-link-hover-color;
+		      	}
+		    }
+		    > li > .cart {
+				color: @brand-primary;
+				font-weight: 600;
+				background-image: url(../images/cart.png);
+				background-repeat: no-repeat;
+				background-position: 20px center;
+				padding-left: 40px;
+			}
+		}
+	}
+}

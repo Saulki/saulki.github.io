@@ -1,0 +1,33 @@
+.footer {
+	background-color: #f2f2f2;
+	padding-top: 30px;
+	font-weight: 300;
+	.container { 
+		padding: 0 20px; 
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			margin-bottom: 15px;
+			a {
+				color: @brand-primary;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.copyright {
+		background-color: @brand-primary;
+		padding: 20px 0;
+		font-size: 12px;
+		margin-top: 20px;
+		color: white;
+		.sign { 
+			padding-right: 15px; 
+		}
+	}
+	.margin-b { margin-bottom: (@padding-large-vertical*2); }
+}

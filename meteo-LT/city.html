@@ -1,0 +1,294 @@
+<!DOCTYPE>
+<html lang="en">  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Remove responsive <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Meteo Vilnius</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- Bootstrap -->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+ 
+    <body>
+        <header class="header">
+            <div class="row topbar">
+                <div class="container">
+                    <a href="#" class="pull-left logo"><img src="images/Herbas.png" /></a>
+                    <ul class="nav header-list">
+                        <li><a href="#" class="active">LT</a> <a href="#">EN</a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-wheelchair"></i></a>
+                            <a href="#"><i class="fa fa-sitemap"></i></a>
+                        <li><a href="dashboard.html"><i class="fa fa-user"></i> Prisijungti</a></li>
+                        <li class="search">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <a class="btn" type="button"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row navigation">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kitos prognozės <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Faktinė informacija <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apžvalgos <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Klimatas <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Naudinga <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mokamos paslaugos <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nuoroda</a></li>
+                                    <li><a href="#">Nuoroda</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div style="background-image: url(images/Clouds.jpg);">
+            <section class="container main-content">
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="weather" id="weather">
+                            <ul class="nav nav-pills weather-header">
+                                <li><a class="btn back"><i class="fa fa-angle-left"></i></a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle large-font" data-toggle="dropdown">Vilnius <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kaunas</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Klaipėda</a></li>
+                                    </ul>
+                                </li>
+                                <li class="search-input pull-right"><input type="text" class="form-control" placeholder="Įveskite miestą..."></li>
+                            </ul>
+                            <ul class="weather-switch">
+                                <li class="day active">
+                                    <div class="date">Trečiadienis <br />02.25</div>
+                                    <div class="forecast"><i class="ic ic-giedra medium"></i><b>2° - 5°</b>7 m/s PV</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">Trečiadienis <br />02.25</div>
+                                    <div class="forecast"><i class="ic ic-giedra medium"></i><b>2° - 5°</b>7 m/s PV</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">Trečiadienis <br />02.25</div>
+                                    <div class="forecast"><i class="ic ic-debesuota medium"></i><b>2° - 5°</b>7 m/s PV</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">Trečiadienis <br />02.25</div>
+                                    <div class="forecast"><i class="ic ic-debesuota-pragiedruliai medium"></i><b>2° - 5°</b>7 m/s PV</div>
+                                </li>
+                                <li class="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </li>
+                            </ul>
+                            <div class="weather-content">
+                                <div class="temp pull-left">
+                                    <div class="forecast large">
+                                        <span>22º</span><i class="ic ic-debesuota-pragiedruliai large"></i>
+                                        <p>Atnaujinta prieš 3min.</p>
+                                    </div>
+                                </div>
+                                <div class="details pull-right">
+                                    <p class="large">Debesuota su pragiedruliais</p>
+                                    <p>Vėjo žvarbumo prognozė 4</p>
+                                    <p>Drėgmė 58%</p>
+                                    <p>Temperatūra 2-5</p>
+                                    <p>Vėjas iki 7ms</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="map-container">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#">Temperatūra</a></li>
+                                <li role="presentation"><a href="#">Krituliai</a></li>
+                                <li role="presentation"><a href="#">Debesuotumas</a></li>
+                                <li role="presentation">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daugiau <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="map-view"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End featured -->
+
+                <div class="gray-bg">
+                    <div class="row margin-b">
+                        <div class="col-xs-7">
+                            <div class="graph">
+                                <img src="images/graph.jpg" alt="Graph" />
+                            </div>
+                        </div>
+                        <div class="col-xs-5">
+                            <table class="table table-striped">
+                                <tr>
+                                    <td class="title" colspan="6">Valandinė prognozė</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3:00</b></td>
+                                    <td class="small"><i class="ic ic-debesuota"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>6:00</b></td>
+                                    <td class="small"><i class="ic ic-debesuota"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>9:00</b></td>
+                                    <td class="small"><i class="ic ic-debesuota"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>12:00</b></td>
+                                    <td class="small"><i class="ic ic-debesuota"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>15:00</b></td>
+                                    <td class="small"><i class="ic ic-debesuota-pragiedruliai"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>18:00</b></td>
+                                    <td class="small"><i class="ic ic-giedra"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>21:00</b></td>
+                                    <td class="small"><i class="ic ic-giedra"></i></td>
+                                    <td>2º</td>
+                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td>5 cm/h</td>
+                                    <td>1065 hPa</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul>
+                            <li><a href="#">Struktūra ir kontaktai</a></li>
+                            <li><a href="#">Teisinė informacija</a></li>
+                            <li><a href="#">Veikla</a></li>
+                            <li><a href="#">Nuorodos</a></li>
+                            <li><a href="#">Autorinės teisės</a></li>
+                            <li><a href="#">Naudojimo taisyklės</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-5">
+                        <ul>
+                            <li><b>Kontaktai:</b></li>
+                            <li>
+                                Rudnios g. 6, 09300 Vilnius, Lietuva<br />
+                                Tel.: +370 5 275 1194<br />
+                                Faks." +370 5 272 8874<br />
+                                El. paštas: lhmt@meteo.lt
+                            </li>
+                            <li>
+                                Juridinių asmenų registras<br />
+                                kodas 290743240<br />
+                                PVM mokėtojo kodas LT907432416
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="#"><img class="margin-b" src="images/footer-icon_WMO.png" /></a><br />
+                        <a href="#"><img class="margin-b" src="images/footer-icon_kuriame.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <a href="#"><img class="sign" src="images/counter.png" /></a> 
+                    ©2015 Lietuvos hidrometeorologijos tarnyba prie Aplinkos ministerijos. Visos teisės saugomos.</div>
+            </div>
+        </footer>
+ 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function(){
+                var weatherH = $('#weather').height();
+                $(".map-view").css({ "min-height" : weatherH - 60 });
+            });
+        </script>
+    </body>
+</html>
