@@ -6732,7 +6732,6 @@ button.close {
 }
 .forecast {
   position: relative;
-  display: block;
 }
 .forecast b {
   display: block;
