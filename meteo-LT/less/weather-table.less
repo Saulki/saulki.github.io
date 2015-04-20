@@ -109,7 +109,10 @@
 			line-height: 16px;
 			height: 30px;
 			font-weight: 300;
-			&::-webkit-input-placeholder {
+			&::-webkit-input-placeholder,
+			&:-moz-placeholder,
+			&::-moz-placeholder, 
+			&:-ms-input-placeholder {
 				color: white;
 			}
 			&:focus {
