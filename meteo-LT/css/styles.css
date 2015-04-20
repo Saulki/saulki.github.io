@@ -6769,9 +6769,15 @@ button.close {
   height: 30px;
   font-weight: 300;
 }
-.weather .weather-header .form-control::-webkit-input-placeholder,
-.weather .weather-header .form-control:-moz-placeholder,
-.weather .weather-header .form-control::-moz-placeholder,
+.weather .weather-header .form-control::-webkit-input-placeholder {
+  color: white;
+}
+.weather .weather-header .form-control:-moz-placeholder {
+  color: white;
+}
+.weather .weather-header .form-control::-moz-placeholder {
+  color: white;
+}
 .weather .weather-header .form-control:-ms-input-placeholder {
   color: white;
 }
