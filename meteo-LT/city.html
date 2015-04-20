@@ -178,7 +178,7 @@
                                     <td><b>3:00</b></td>
                                     <td class="small"><i class="ic ic-debesuota"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -186,7 +186,7 @@
                                     <td><b>6:00</b></td>
                                     <td class="small"><i class="ic ic-debesuota"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -194,7 +194,7 @@
                                     <td><b>9:00</b></td>
                                     <td class="small"><i class="ic ic-debesuota"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -202,7 +202,7 @@
                                     <td><b>12:00</b></td>
                                     <td class="small"><i class="ic ic-debesuota"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -210,7 +210,7 @@
                                     <td><b>15:00</b></td>
                                     <td class="small"><i class="ic ic-debesuota-pragiedruliai"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -218,7 +218,7 @@
                                     <td><b>18:00</b></td>
                                     <td class="small"><i class="ic ic-giedra"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -226,7 +226,7 @@
                                     <td><b>21:00</b></td>
                                     <td class="small"><i class="ic ic-giedra"></i></td>
                                     <td>2º</td>
-                                    <td><i class="fa fa-arrow-up"></i> 7 m/s</td>
+                                    <td><i class="fa fa-location-arrow"></i> 7 m/s</td>
                                     <td>5 cm/h</td>
                                     <td>1065 hPa</td>
                                 </tr>
@@ -288,6 +288,17 @@
             $(window).load(function(){
                 var weatherH = $('#weather').height();
                 $(".map-view").css({ "min-height" : weatherH - 60 });
+            });
+            $(document).ready(function(){
+                $(".table .fa-location-arrow").each(function(){
+                    var degrees = (Math.floor(Math.random() * 6) + 1) * (Math.floor(Math.random() * 60) + 1);
+                    $(this).css({
+                        '-webkit-transform' : 'rotate('+ degrees +'deg)',
+                         '-moz-transform' : 'rotate('+ degrees +'deg)',
+                         '-ms-transform' : 'rotate('+ degrees +'deg)',
+                         'transform' : 'rotate('+ degrees +'deg)'
+                    });
+                })
             });
         </script>
     </body>

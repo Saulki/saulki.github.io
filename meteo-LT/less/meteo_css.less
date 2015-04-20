@@ -55,8 +55,14 @@ body {
 	border: none;
 	margin-bottom: @padding-large-vertical;
 	p {
-		padding: 0 (@alert-padding*2);
-		background: url(../images/icon-attention.png) no-repeat (@alert-padding - 14) center;
+		i {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -10px;
+			font-size: 15px;
+		}
+		padding: 0 (@alert-padding*1.5);
 		position: relative;
 	}
 }
