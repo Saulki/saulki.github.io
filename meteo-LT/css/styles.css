@@ -6755,6 +6755,10 @@ button.close {
   width: 100%;
   background-color: #498ce8;
   color: white;
+  font-weight: 300;
+}
+.weather .weather-header th {
+  font-weight: 300;
 }
 .weather .weather-header .search-input {
   padding: 10px;
