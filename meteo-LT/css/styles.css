@@ -6572,9 +6572,8 @@ button.close {
   color: #498ce8;
   background-color: transparent;
 }
-.header-list li a.active {
-  font-weight: 600;
-  color: #498ce8;
+.header-list li a:focus {
+  background-color: #f5f5f5 !important;
 }
 .header-list li.search {
   display: inline-block;
@@ -6582,6 +6581,10 @@ button.close {
   clear: both;
   float: right;
   margin-top: 10px;
+}
+.header-list li .active {
+  font-weight: 600;
+  color: #498ce8;
 }
 .header-list input {
   width: 200px;
@@ -6592,7 +6595,6 @@ button.close {
   font-size: 12px;
   line-height: 16px;
   height: 30px;
-  font-weight: 300;
 }
 .header-list .btn {
   position: absolute;
@@ -6690,7 +6692,6 @@ button.close {
 .table.weather > tbody > tr > td,
 .table.weather > tfoot > tr > td {
   border: none;
-  font-weight: 300;
 }
 .table.weather > thead {
   background-color: #4086e6;
@@ -6767,7 +6768,6 @@ button.close {
   font-size: 12px;
   line-height: 16px;
   height: 30px;
-  font-weight: 300;
 }
 .weather .weather-header .form-control::-webkit-input-placeholder {
   color: white;
@@ -6841,7 +6841,10 @@ button.close {
 .weather .weather-content .temp {
   width: 48%;
 }
-.weather .weather-content .temp .forecast.large i {
+.weather .weather-content .temp .large span {
+  font-weight: 300;
+}
+.weather .weather-content .temp .large.forecast i {
   display: inline-block;
   position: relative;
   top: 5px;
@@ -6875,6 +6878,7 @@ button.close {
   overflow: hidden;
   display: block;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 .block-list .count {
   background-color: #30ba29;
@@ -6883,7 +6887,6 @@ button.close {
   height: 18px;
   text-align: center;
   font-size: 12px;
-  font-weight: 400;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   margin-left: 7px;
@@ -6895,7 +6898,6 @@ button.close {
   background-color: rgba(40, 116, 220, 0.85);
   color: #ffffff;
   padding: 24px 10px 24px 45px;
-  font-weight: 300;
   position: relative;
   z-index: 200;
 }
@@ -6927,38 +6929,9 @@ button.close {
   width: 100%;
   height: 100%;
 }
-.block-list.empty {
-  background-color: #fafafa;
-  border: 2px dashed #eeeeee;
-  text-align: center;
-}
-.block-list.empty span {
-  display: block;
-  padding-top: 20px;
-  width: 100%;
-  margin-top: 37%;
-  font-weight: 400;
-  /*font-size: 12px;*/
-  color: #666666;
-  background: url(../images/plus-icon.png) no-repeat center top;
-}
-.block-list .settings:after {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: url(../images/settings.png) no-repeat center center;
-  opacity: .35;
-  position: absolute;
-  right: 20px;
-  top: 30px;
-}
-.block-list .settings:after:hover {
-  opacity: 1;
-}
 .footer {
   background-color: #f2f2f2;
   padding-top: 30px;
-  font-weight: 300;
 }
 .footer .container {
   padding: 0 20px;
@@ -6983,6 +6956,7 @@ button.close {
   font-size: 12px;
   margin-top: 20px;
   color: white;
+  font-weight: 300;
 }
 .footer .copyright .sign {
   padding-right: 15px;
@@ -7211,8 +7185,21 @@ button.close {
   color: #666666;
   padding-right: 5px;
 }
+.bg-image {
+  min-width: 970px!important;
+}
+.container {
+  width: 970px!important;
+  max-width: none !important;
+}
+.navigation.row {
+  min-width: 970px!important;
+}
+.footer {
+  min-width: 970px!important;
+}
 body {
-  font-weight: 300;
+  font-weight: 400;
 }
 .clear {
   clear: both;
@@ -7245,7 +7232,6 @@ body {
 }
 .dropdown-menu > li > a {
   padding: 15px 20px;
-  font-weight: 300;
 }
 .alert {
   font-weight: 300;
@@ -7282,8 +7268,12 @@ h3 {
   font-weight: 600;
   margin: 0 0 1em;
 }
+.nav > li > a:focus {
+  background-color: inherit;
+}
 .nav-pills {
   background-color: #498ce8;
+  font-weight: 300;
 }
 .nav-pills > li > a {
   color: white;
@@ -7306,7 +7296,6 @@ h3 {
 }
 .nav-pills > li .large-font {
   font-size: 22px;
-  font-weight: 300;
   line-height: 20px;
 }
 .nav-pills > li .large-font .fa {
@@ -7332,7 +7321,7 @@ h3 {
 }
 .news .title span {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   color: #666666;
   padding-left: 15px;
 }
@@ -7361,12 +7350,4 @@ h3 {
 .btn-transparent:focus {
   background-color: #4c8ee9;
   color: #ffffff;
-}
-.bg-image {
-  background: url(../images/background.jpg) no-repeat center top fixed;
-  background-size: cover;
-}
-.container {
-  width: 970px!important;
-  max-width: none !important;
 }

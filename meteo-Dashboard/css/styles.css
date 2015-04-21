@@ -6572,9 +6572,8 @@ button.close {
   color: #498ce8;
   background-color: transparent;
 }
-.header-list > li > a.active {
-  font-weight: 600;
-  color: #498ce8;
+.header-list > li > a:focus {
+  background-color: #f5f5f5 !important;
 }
 .header-list > li.search {
   display: inline-block;
@@ -6594,6 +6593,10 @@ button.close {
 .header-list > li.open > a:focus {
   background-color: #f5f5f5;
 }
+.header-list > li .active {
+  font-weight: 600;
+  color: #498ce8;
+}
 .header-list input {
   width: 200px;
   background-color: #ffffff;
@@ -6603,7 +6606,6 @@ button.close {
   font-size: 12px;
   line-height: 16px;
   height: 30px;
-  font-weight: 300;
 }
 .header-list .btn {
   position: absolute;
@@ -6621,6 +6623,9 @@ button.close {
 }
 .navigation .navbar-default {
   border: 0;
+}
+.navigation .navbar-default .navbar-nav .active {
+  font-weight: 300;
 }
 .navigation .navbar-default .navbar-nav .fa {
   font-size: 15px;
@@ -6646,6 +6651,7 @@ button.close {
   overflow: hidden;
   display: block;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 .block-list.large {
   height: 550px;
@@ -6676,7 +6682,6 @@ button.close {
   background-color: rgba(40, 116, 220, 0.85);
   color: #ffffff;
   padding: 24px 10px 24px 45px;
-  font-weight: 300;
   position: relative;
   z-index: 200;
 }
@@ -6726,7 +6731,6 @@ button.close {
 .footer {
   background-color: #f2f2f2;
   padding-top: 30px;
-  font-weight: 300;
 }
 .footer .container {
   padding: 0 20px;
@@ -6751,6 +6755,7 @@ button.close {
   font-size: 12px;
   margin-top: 20px;
   color: white;
+  font-weight: 300;
 }
 .footer .copyright .sign {
   padding-right: 15px;
@@ -6758,8 +6763,18 @@ button.close {
 .footer .margin-b {
   margin-bottom: 20px;
 }
+.container {
+  width: 970px!important;
+  max-width: none !important;
+}
+.navigation.row {
+  min-width: 970px!important;
+}
+.footer {
+  min-width: 970px!important;
+}
 body {
-  font-weight: 300;
+  font-weight: 400;
 }
 .clear {
   clear: both;
@@ -6792,7 +6807,6 @@ body {
 }
 .dropdown-menu > li > a {
   padding: 15px 20px;
-  font-weight: 300;
 }
 .alert {
   font-weight: 300;
@@ -6823,6 +6837,9 @@ h3 {
   font-weight: 600;
   margin: 0 0 1em;
 }
+.nav > li > a:focus {
+  background-color: inherit;
+}
 .nav-pills {
   background-color: #fafafa;
 }
@@ -6847,7 +6864,6 @@ h3 {
 }
 .nav-pills > li .large-font {
   font-size: 22px;
-  font-weight: 300;
   line-height: 20px;
 }
 .nav-pills > li .large-font .fa {
@@ -6902,8 +6918,4 @@ h3 {
 .btn-transparent:focus {
   background-color: #4c8ee9;
   color: #ffffff;
-}
-.container {
-  width: 970px!important;
-  max-width: none !important;
 }

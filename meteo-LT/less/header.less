@@ -21,9 +21,8 @@
 				color: @brand-primary; 
 				background-color: transparent;
 			}
-			&.active {
-				font-weight: 600; 
-				color: @brand-primary;
+			&:focus {
+				background-color: @gray-light!important;
 			}
 		}
 		&.search { 
@@ -32,6 +31,10 @@
 			clear: both;
 			float: right;
 			margin-top: 10px;
+		}
+		.active {
+			font-weight: 600; 
+			color: @brand-primary;
 		}
 	}
 	input { 
@@ -43,7 +46,6 @@
 		font-size: 12px;
 		line-height: 16px;
 		height: 30px;
-		font-weight: 300;
 	}
 	.btn { 
 		position: absolute; 
@@ -66,7 +68,7 @@
 		.navbar-nav {	
 			.fa { 
 				font-size: 15px;
-    line-height: @line-height-computed;
+    			line-height: @line-height-computed;
 			}
 			> .open > a {
 		    	&,

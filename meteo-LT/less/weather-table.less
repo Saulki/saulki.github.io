@@ -35,7 +35,6 @@
 		    	> th,
 		    	> td {
 		        	border: none;
-		        	font-weight: 300;
 		      	}
 		    }
 		}
@@ -108,7 +107,6 @@
 			font-size: 12px;
 			line-height: 16px;
 			height: 30px;
-			font-weight: 300;
 			&::-webkit-input-placeholder {
 				color: white;
 			}
@@ -181,10 +179,15 @@
 		background-color: @gray-lighter;
 		.temp {
 			width: 48%;
-			.forecast.large i {
-				display: inline-block;
-				position: relative;
-				top: 5px;
+			.large {
+				span {
+					font-weight: 300;
+				}
+				&.forecast i {
+					display: inline-block;
+					position: relative;
+					top: 5px;
+				}
 			}
 		}
 		.details {

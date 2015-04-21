@@ -6,12 +6,13 @@
 @import "header.less";
 @import "block-list.less";
 @import "footer.less";
+@import "no-responsive.less";
 
 
 // Custom LESS
 
 body {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .clear { clear: both; }
@@ -42,7 +43,7 @@ body {
 	border: none;
 	> li > a {
     	padding: @navbar-padding-vertical @navbar-padding-horizontal;
-    	font-weight: 300;
+    	// font-weight: 300;
 	}
 }
 
@@ -77,6 +78,16 @@ h3 {
 	margin: 0 0 1em;
 }
 
+.nav {
+	> li {
+		> a {
+			&:focus {
+				background-color: inherit;
+			}
+		}
+	}
+}
+
 @filter-height: 50px;
 
 .nav-pills {
@@ -106,7 +117,6 @@ h3 {
 	    }
 	    .large-font {
 	    	font-size: 22px;
-	    	font-weight: 300;
     		line-height: @line-height-computed;
     		.fa {
     			font-size: 15px;
@@ -157,9 +167,5 @@ h3 {
 		background-color: #4c8ee9;
 		color: #ffffff;
 	}
-}
-.container {
-  width: 970px!important;
-  max-width: none !important;
 }
 
