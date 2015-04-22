@@ -6565,7 +6565,7 @@ button.close {
 }
 .header-list > li > a {
   display: inline-block;
-  padding: 6px;
+  padding: 4px 6px;
   color: #666666;
 }
 .header-list > li > a:hover {
