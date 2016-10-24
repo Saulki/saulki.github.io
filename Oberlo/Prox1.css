@@ -1,0 +1,70 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3299129, 2016-10-24T07:36:51-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * 
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3299129
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/325739");
+
+  
+@font-face {
+	font-family: 'ProximaNovaNew';
+	src: url('webfonts/325739_0_0.eot');
+	src: url('webfonts/325739_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/325739_0_0.woff2') format('woff2'),
+		 url('webfonts/325739_0_0.woff') format('woff'),
+		 url('webfonts/325739_0_0.ttf') format('truetype');
+	font-weight: 400;
+}
+  
+@font-face {
+	font-family: 'ProximaNovaNew';
+	src: url('webfonts/325739_0_0.eot');
+	src: url('webfonts/325739_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/325739_0_0.woff2') format('woff2'),
+		 url('webfonts/325739_0_0.woff') format('woff'),
+		 url('webfonts/325739_0_0.ttf') format('truetype');
+	font-weight: 300;
+}
+ 
+  
+@font-face {
+	font-family: 'ProximaNovaNew';
+	src: url('webfonts/325739_1_0.eot');
+	src: url('webfonts/325739_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/325739_1_0.woff2') format('woff2'),
+		 url('webfonts/325739_1_0.woff') format('woff'),
+		 url('webfonts/325739_1_0.ttf') format('truetype');
+	font-weight: 600;
+}
+  
+@font-face {
+	font-family: 'ProximaNovaNew';
+	src: url('webfonts/325739_1_0.eot');
+	src: url('webfonts/325739_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/325739_1_0.woff2') format('woff2'),
+		 url('webfonts/325739_1_0.woff') format('woff'),
+		 url('webfonts/325739_1_0.ttf') format('truetype');
+	font-weight: 700;
+}
+ 
