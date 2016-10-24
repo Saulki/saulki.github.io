@@ -1,4 +1,4 @@
-body, .label { font-family: "Proxima Nova"!important; font-weight: 400; }
+body, .label { font-family: "Proxima Nova"!important; font-weight: 400; -webkit-font-smoothing: antialiased; }
 
 .filter-orders>ul>li>a, .navbar-brand, b, optgroup, strong, .badge 
 	{ font-weight: 600; }
@@ -36,7 +36,7 @@ body, .label { font-family: "Proxima Nova"!important; font-weight: 400; }
     font-size: 12px;
     line-height: 20px;
     border-radius: 3px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn-icon-left {
@@ -54,7 +54,7 @@ body, .label { font-family: "Proxima Nova"!important; font-weight: 400; }
 .btn-default.focus,
 .btn-default.hover,
 .btn-default:focus,
-.btn-default:hover { border-color: #B5C6DA }
+.btn-default:hover { border-color: #D2DCE8!important; background-color: #F9FAFC; color: #0078BD!important; outline-color: rgba(0,0,0,0.2)!important; }
 .btn-default.active,
 .btn-default:active { background-color:#E2E9F0 }
 
@@ -100,13 +100,13 @@ body, .label { font-family: "Proxima Nova"!important; font-weight: 400; }
 
 .btn.focus, .btn:focus {
     text-decoration: none;
-  /*
+  
     outline-offset: -5px;
-    outline: rgba(0,0,0,0.2) dotted 1px;*/
-    box-shadow: inset 0 0 0 1px #fff; outline: none;
+    outline: rgba(255,255,255,0.4) dotted 1px;
+    /*box-shadow: 0 0 0 3px rgba(39,183,215,0.20); outline: none;/* BG: */
 }
 
-.btn:hover { box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.04); }
+/*.btn:hover { box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.04); }*/
 .btn:active { box-shadow: none; position: relative; top: 1px; }
 
 
@@ -118,7 +118,7 @@ body, .label { font-family: "Proxima Nova"!important; font-weight: 400; }
 
 /* Border dark */
 .form-control, .btn-default 
-	{ border-color: #E1E8F0!important; }
+	{ border-color: #D2DCE8!important; }
 
 /* Background light */
 .single-supplier-row 
@@ -130,19 +130,20 @@ body
 
 /* Link color */
 .blue-color, a 
-	{ color: #439cd5!important; }
+	{ color: #1A81C5!important; }
 .blue-color:hover, a:hover 
   { text-decoration: underline; }
 
 /* Light text */
 .grey-color, .elephant-color, .navbar-default .navbar-nav>li>a, .pagination-wrapper ul.pagination li a 
-	{ color: #8E9EAA!important; }
+	{ color: #818D9A!important; }
 
 /* Dark text */
 body, .filter-orders>ul>li>a, .btn-default, .navbar-default .navbar-brand,.navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .pagination-wrapper ul.pagination li.active 
-	{ color: #343F4A!important; }
-
+	{ color: #202E3C!important; }
+.sidebar-main 
+  { background-color: #364656; }
 
 
 
